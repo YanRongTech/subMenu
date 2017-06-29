@@ -1,0 +1,54 @@
+.sideMenu-title {
+  padding: 8px 16px 8px 32px;
+  color: rgba(0,0,0,.43);
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.sideMenu-ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+
+  &::after{
+    display:block;
+    clear:both;
+    content:".";
+    height:0;
+    visibility:hidden;
+  }
+
+  .sideMenu-li {
+    width: 200px;
+    height: 42px;
+    box-sizing: border-box;
+    line-height: 40px;
+    cursor: pointer;
+
+    .active {
+      color: #108ee9;
+      border-right: 3px solid #108ee9;
+      background-color: #ecf6fd;
+    }
+  }
+
+  .sideMenu-link {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding-left: 48px;
+    white-space: nowrap;
+    transition: all .3s;
+  }
+
+  a.sideMenu-link:hover {
+    color: #108ee9 !important;
+  }
+
+  .sideMenu-icon {
+    margin-right: 8px;
+  }
+}
